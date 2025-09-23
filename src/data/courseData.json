@@ -1,0 +1,244 @@
+{
+  "instructor": {
+    "name": "Shyanukant Rathi",
+    "title": "AI Automation Expert & Course Creator",
+    "bio": "Founder of Krtrim AI",
+    "image": "https://avatars.githubusercontent.com/u/72182251?s=400&u=f4146c10b86b513b38b00a59cc1a970fe6f7e5ab&v=4",
+    "rating": 4.9,
+    "totalReviews": 60,
+    "studentsCount": "100+",
+    "experience": "3+",
+    "credentials": [
+      "Founder of Krtrim AI, developing generative AI solutions for business automation.",
+      "BSpecialist in Python, Django, and FastAPI, building scalable web applications and APIs",
+      "Architect of AI-powered SaaS platforms that integrate advanced automation",
+      "Full-stack developer and web designer with a focus on creating intuitive user experiences."
+    ],
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/shyanukant",
+      "website": "https://github.com/shyanukant"
+    }
+  },
+  "course": {
+    "title": "AI Mastery Course",
+    "subtitle": "Learn AI Automation & Build Your Future",
+    "duration": "30 days",
+    "commitment": "1-2 hours daily",
+    "access": "lifetime",
+    "language": "English with Hindi support",
+    "skill_level": "Beginner to Advanced",
+    "certificate": true,
+    "modules": [
+      {
+        "title": "AI Fundamentals",
+        "description": "Understanding AI, Machine Learning, and automation basics",
+        "lessons": 8
+      },
+      {
+        "title": "ChatGPT Mastery",
+        "description": "Advanced prompt engineering and AI conversation techniques",
+        "lessons": 12
+      },
+      {
+        "title": "AI Content Creation",
+        "description": "Generate blogs, videos, graphics, and social media content",
+        "lessons": 10
+      },
+      {
+        "title": "Business Automation",
+        "description": "Automate workflows with n8n, Zapier, and AI tools",
+        "lessons": 15
+      },
+      {
+        "title": "AI Tools & Platforms",
+        "description": "Master 20+ essential AI tools for productivity",
+        "lessons": 18
+      },
+      {
+        "title": "Building AI Projects",
+        "description": "Create real-world AI applications and solutions",
+        "lessons": 12
+      }
+    ],
+    "youtube_intro": "https://youtube.com/watch?v=ai-course-intro",
+    "youtube_testimonials": "https://youtube.com/watch?v=student-testimonials"
+  },
+  "pricing": {
+    "regular_price": 10000,
+    "discounted_price": 1000,
+    "currency": "₹",
+    "discount_percentage": 90,
+    "offer_valid_until": "2024-12-31",
+    "payment_methods": ["UPI", "Credit Card", "Debit Card", "Net Banking"],
+    "qr_code_image": "/payment-qr-code.png",
+    "razorpay_key": "rzp_live_YOUR_KEY_HERE"
+  },
+  "bonuses": [
+    {
+      "title": "AI Mastery Notes & Guides",
+      "description": "Our private collection of prompts, cheatsheets, and guides.",
+      "value": 2500,
+      "icon": "Star"
+    },
+    {
+      "title": "Free Domain & Server Guide",
+      "description": "Learn how to get your online presence started for almost no cost.",
+      "value": 1500,
+      "icon": "Globe"
+    },
+    {
+      "title": "The Complete AI Starter Kit",
+      "description": "A curated list of the best AI tools for every task.",
+      "value": 5000,
+      "icon": "Zap"
+    },
+    {
+      "title": "Lifetime Community Access",
+      "description": "Join our private group of AI builders to network and collaborate.",
+      "value": 3000,
+      "icon": "Users"
+    },
+    {
+      "title": "Surprise Referral Gifts",
+      "description": "Special rewards for top-performing affiliates.",
+      "value": 2000,
+      "icon": "Gift"
+    },
+    {
+      "title": "Exclusive Online Events",
+      "description": "Free entry to members-only workshops and live Q&A sessions.",
+      "value": 1000,
+      "icon": "Calendar"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Priya Sharma",
+      "role": "Software Engineer",
+      "location": "Bangalore",
+      "content": "This course completely transformed my career! I went from doing manual data entry to building AI workflows that save my company 20 hours per week. The n8n automation skills alone got me a promotion.",
+      "rating": 5,
+      "image": "/testimonials/priya-sharma.jpg"
+    },
+    {
+      "name": "Rohit Gupta",
+      "role": "Digital Marketing Freelancer",
+      "location": "Mumbai",
+      "content": "I was struggling to compete with other freelancers. After learning AI content creation and automation, I can now deliver projects 3x faster and charge premium rates. Already earned back the course fee!",
+      "rating": 5,
+      "image": "/testimonials/rohit-gupta.jpg"
+    },
+    {
+      "name": "Anjali Patel",
+      "role": "Business Owner",
+      "location": "Ahmedabad",
+      "content": "As a small business owner, I was drowning in repetitive tasks. The automation techniques taught here helped me streamline my entire operation. Now I focus on growth while AI handles the routine work.",
+      "rating": 5,
+      "image": "/testimonials/anjali-patel.jpg"
+    },
+    {
+      "name": "Vikram Singh",
+      "role": "Recent Graduate",
+      "location": "Delhi",
+      "content": "Fresh out of college, I felt unprepared for the job market. This course gave me practical AI skills that made me stand out. I landed my dream job and even started a side income through referrals!",
+      "rating": 5,
+      "image": "/testimonials/vikram-singh.jpg"
+    },
+    {
+      "name": "Sneha Reddy",
+      "role": "Content Creator",
+      "location": "Hyderabad",
+      "content": "The AI content creation modules are game-changers! I can now produce high-quality graphics, videos, and copy in minutes instead of hours. My clients are amazed by the turnaround time.",
+      "rating": 5,
+      "image": "/testimonials/sneha-reddy.jpg"
+    },
+    {
+      "name": "Arjun Mehta",
+      "role": "Startup Founder",
+      "location": "Pune",
+      "content": "The business automation strategies helped me scale my startup without hiring additional staff. The ROI on this course is incredible - it paid for itself in the first week!",
+      "rating": 5,
+      "image": "/testimonials/arjun-mehta.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I need any prior experience with AI or programming?",
+      "answer": "Not at all! This course is designed for complete beginners. We start from the basics and guide you step-by-step through every concept. No coding or technical background required."
+    },
+    {
+      "question": "How much time do I need to dedicate daily?",
+      "answer": "The course is designed to be completed in 30 days with just 1-2 hours of daily commitment. You can go at your own pace - some students finish faster, others take a bit longer."
+    },
+    {
+      "question": "What if I can't complete the course in 30 days?",
+      "answer": "No worries! You get lifetime access to all course materials. You can take as much time as you need and revisit any section whenever you want."
+    },
+    {
+      "question": "Do I get access to the AI tools mentioned in the course?",
+      "answer": "The course teaches you how to use various AI tools. Some tools offer free tiers, while others may require separate subscriptions. We provide guidance on getting the best deals and free alternatives."
+    },
+    {
+      "question": "Is the referral program really unlimited?",
+      "answer": "Yes! There are absolutely no limits on how many people you can refer. You earn ₹300 for every successful enrollment through your unique link, and we provide you with marketing materials to help you succeed."
+    },
+    {
+      "question": "Can I get a refund if I'm not satisfied?",
+      "answer": "We're confident you'll love the course, but if you're not completely satisfied within the first 7 days, we offer a full money-back guarantee, no questions asked."
+    },
+    {
+      "question": "Will I be able to get a job after completing this course?",
+      "answer": "This course teaches highly in-demand skills. Many students have landed better jobs, freelance projects, or started their own AI consulting businesses. We also provide guidance on showcasing your new skills to employers."
+    },
+    {
+      "question": "Are the bonuses really worth ₹15,000?",
+      "answer": "Absolutely! The AI Starter Kit alone contains premium tools and resources that would cost thousands. The lifetime community access and exclusive events provide ongoing value that far exceeds the bonus valuation."
+    },
+    {
+      "question": "How is this different from free AI tutorials on YouTube?",
+      "answer": "While free content exists, this course provides a structured, comprehensive learning path with practical projects, community support, and proven frameworks. You get a complete system, not just scattered information."
+    },
+    {
+      "question": "Will the course content become outdated quickly?",
+      "answer": "We focus on fundamental principles and widely-adopted tools that have staying power. Plus, as a lifetime member, you'll receive updates when new important AI developments emerge."
+    }
+  ],
+  "referral_program": {
+    "commission_rate": 30,
+    "commission_amount": 300,
+    "currency": "₹",
+    "unlimited_referrals": true,
+    "payment_cycle": "instant",
+    "marketing_materials": true,
+    "tracking_dashboard": true,
+    "minimum_payout": 500
+  },
+  "whatsapp_community": {
+    "name": "AI Masters Community",
+    "members_count": 5247,
+    "join_link": "https://chat.whatsapp.com/ai-masters-community",
+    "features": [
+      "Daily AI Tips & Updates",
+      "Peer-to-Peer Learning",
+      "Exclusive Masterclasses",
+      "Weekly Challenges",
+      "24/7 Support",
+      "Expert Guidance"
+    ],
+    "description": "Connect with 100+ AI enthusiasts, get instant help, share success stories, and stay updated with the latest AI trends"
+  },
+  "contact": {
+    "email": "support@aicourse.com",
+    "phone": "+91 9876543210",
+    "office": "Mumbai, Maharashtra, India",
+    "support_hours": "9 AM - 9 PM IST",
+    "response_time": "Within 24 hours",
+    "support_channels": ["Email", "WhatsApp", "Phone", "Community"]
+  },
+  "social_proof": {
+    "total_students": "100+",
+    "average_rating": 4.9,
+    "completion_rate": "94%",
+    "featured_in": ["Economic Times", "Tech Crunch", "Business Standard"]
+  }
+}
