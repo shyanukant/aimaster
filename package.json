@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-   "homepage": "https://shyanukant.github.io/aimaster",
+   "homepage": "https://academy.krtrim.tech/",
 
   "scripts": {
     "dev": "vite",
