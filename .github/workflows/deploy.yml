@@ -74,3 +74,4 @@ jobs:
         echo "🚀 Deployment completed successfully!"
         echo "📱 App URL: ${{ steps.deployment.outputs.page_url }}"
         echo "🌐 Your app is now live on GitHub Pages!"
+        
