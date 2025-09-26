@@ -30,12 +30,12 @@ export const HeroSection = () => {
             <div className="flex items-center gap-3">
               {user ? <>
                   <Link to="/profile">
-                    <Button variant="outline" size="sm" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm rounded-full">
+                    <Button variant="outline" size="sm" className="border-white/30 text-primary hover:text-white hover:bg-white/10 backdrop-blur-sm rounded-full">
                       <User className="w-4 h-4 mr-2" />
                       Profile
                     </Button>
                   </Link>
-                  <Button variant="outline" size="sm" onClick={handleLogout} className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm rounded-full">
+                  <Button variant="outline" size="sm" onClick={handleLogout} className="border-white/30 text-primary hover:text-white hover:bg-white/10 backdrop-blur-sm rounded-full">
                     <LogOut className="w-4 h-4 mr-2" />
                     Logout
                   </Button>
