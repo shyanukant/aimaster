@@ -138,7 +138,7 @@ const Checkout = () => {
               <div className="text-center p-6 bg-muted/10 border-2 border-dashed border-border rounded-lg">
                 <div className="w-48 h-48 mx-auto bg-muted/30 rounded-lg flex items-center justify-center mb-4">
                   <div className="text-center">
-                    <img src="payment/payment_qr_code.png" alt="Payment QR Code" className="w-48 h-48 max-w-full max-h-full mx-auto mb-2" />
+                    <img src="/payment/payment_qr_code.png" alt="Payment QR Code" className="w-48 h-48 max-w-full max-h-full mx-auto mb-2" />
 
                     <p className="text-sm text-muted-foreground">Payment QR Code</p>
                   </div>

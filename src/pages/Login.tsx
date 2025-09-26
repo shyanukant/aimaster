@@ -142,13 +142,13 @@ const Login = () => {
             </Form>
 
             <div className="mt-6 text-center space-y-4">
-              <p className="text-sm text-muted-foreground">
+              {/* <p className="text-sm text-muted-foreground">
                 Demo Credentials:
               </p>
               <div className="text-xs text-muted-foreground space-y-1">
                 <p>Student: student@example.com / password123</p>
                 <p>Partner: partner@example.com / password123</p>
-              </div>
+              </div> */}
               
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">
