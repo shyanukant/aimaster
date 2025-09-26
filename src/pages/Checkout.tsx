@@ -38,15 +38,16 @@ const Checkout = () => {
       // Simulate payment verification delay
       await new Promise(resolve => setTimeout(resolve, 2000));
       
-      // Update user profile with transaction details
+      // Update user profile with transaction details (set to verifying status)
       updateProfile({
         transaction_id: data.transactionId,
-        course_purchased: true,
+        verification_status: 'verifying',
+        course_purchased: false, // Will be set to true by admin after verification
       });
       
       toast({
         title: 'Payment Verification Submitted',
-        description: 'You will receive a confirmation notification after verification.',
+        description: 'Your transaction is being verified. You will receive confirmation soon.',
       });
       
       navigate('/profile');
@@ -138,8 +139,7 @@ const Checkout = () => {
               <div className="text-center p-6 bg-muted/10 border-2 border-dashed border-border rounded-lg">
                 <div className="w-48 h-48 mx-auto bg-muted/30 rounded-lg flex items-center justify-center mb-4">
                   <div className="text-center">
-                    <img src="/payment/payment_qr_code.png" alt="Payment QR Code" className="w-48 h-48 max-w-full max-h-full mx-auto mb-2" />
-
+                    <QrCode className="w-24 h-24 text-muted-foreground mx-auto mb-2" />
                     <p className="text-sm text-muted-foreground">Payment QR Code</p>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const Checkout = () => {
                 </div>
               </div>
 
-              Transaction ID Form
+              {/* Transaction ID Form */}
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                   <FormField

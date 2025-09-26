@@ -21,6 +21,7 @@ export interface Profile {
   referral_count: number;
   earnings: number;
   total_referrals: number;
+  verification_status: string | null;
 }
 
 export interface User extends SupabaseUser {

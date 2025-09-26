@@ -113,6 +113,7 @@ export type Database = {
           updated_at: string
           user_id: string
           user_type: string
+          verification_status: string | null
         }
         Insert: {
           city?: string | null
@@ -133,6 +134,7 @@ export type Database = {
           updated_at?: string
           user_id: string
           user_type: string
+          verification_status?: string | null
         }
         Update: {
           city?: string | null
@@ -153,6 +155,7 @@ export type Database = {
           updated_at?: string
           user_id?: string
           user_type?: string
+          verification_status?: string | null
         }
         Relationships: [
           {
@@ -164,12 +167,51 @@ export type Database = {
           },
         ]
       }
+      referral_history: {
+        Row: {
+          created_at: string
+          earnings_amount: number | null
+          id: string
+          referral_code: string
+          referred_user_id: string
+          referred_user_name: string | null
+          referrer_id: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          earnings_amount?: number | null
+          id?: string
+          referral_code: string
+          referred_user_id: string
+          referred_user_name?: string | null
+          referrer_id: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          earnings_amount?: number | null
+          id?: string
+          referral_code?: string
+          referred_user_id?: string
+          referred_user_name?: string | null
+          referrer_id?: string
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      confirm_course_purchase: {
+        Args: { transaction_id_param: string; user_id_param: string }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never

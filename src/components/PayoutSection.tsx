@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -47,8 +47,11 @@ interface BankDetails {
 interface PayoutRequest {
   id: string;
   amount: number;
-  status: 'pending' | 'approved' | 'rejected';
+  status: string;
   request_date: string;
+  notes?: string;
+  processed_date?: string;
+  profile_id: string;
 }
 
 export const PayoutSection = () => {
@@ -58,6 +61,56 @@ export const PayoutSection = () => {
   const [isRequestingPayout, setIsRequestingPayout] = useState(false);
   const [bankDetails, setBankDetails] = useState<BankDetails | null>(null);
   const [payoutRequests, setPayoutRequests] = useState<PayoutRequest[]>([]);
+
+  // Fetch bank details and payout requests on component mount
+  useEffect(() => {
+    if (profile?.id) {
+      fetchBankDetails();
+      fetchPayoutRequests();
+    }
+  }, [profile?.id]);
+
+  const fetchBankDetails = async () => {
+    if (!profile?.id) return;
+    
+    try {
+      const { data, error } = await supabase
+        .from('bank_details')
+        .select('*')
+        .eq('profile_id', profile.id)
+        .maybeSingle();
+
+      if (error) throw error;
+      setBankDetails(data);
+      
+      // If bank details exist, populate the form
+      if (data) {
+        bankForm.setValue('accountNumber', data.account_number || '');
+        bankForm.setValue('ifscCode', data.ifsc_code || '');
+        bankForm.setValue('accountHolderName', data.account_holder_name || '');
+        bankForm.setValue('upiId', data.upi_id || '');
+      }
+    } catch (error) {
+      console.error('Error fetching bank details:', error);
+    }
+  };
+
+  const fetchPayoutRequests = async () => {
+    if (!profile?.id) return;
+    
+    try {
+      const { data, error } = await supabase
+        .from('payout_requests')
+        .select('*')
+        .eq('profile_id', profile.id)
+        .order('request_date', { ascending: false });
+
+      if (error) throw error;
+      setPayoutRequests(data || []);
+    } catch (error) {
+      console.error('Error fetching payout requests:', error);
+    }
+  };
 
   const bankForm = useForm<BankDetailsFormData>({
     resolver: zodResolver(bankDetailsSchema),
@@ -95,6 +148,13 @@ export const PayoutSection = () => {
       if (error) {
         throw error;
       }
+      
+      setBankDetails({
+        account_number: data.accountNumber,
+        ifsc_code: data.ifscCode,
+        account_holder_name: data.accountHolderName,
+        upi_id: data.upiId || null,
+      });
       
       toast({
         title: 'Bank Details Updated',
@@ -149,6 +209,9 @@ export const PayoutSection = () => {
       await updateProfile({
         earnings: (profile.earnings || 0) - data.amount,
       });
+      
+      // Refresh payout requests
+      fetchPayoutRequests();
       
       toast({
         title: 'Payout Request Submitted',
