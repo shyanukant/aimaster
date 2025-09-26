@@ -60,7 +60,7 @@
         "lessons": 12
       }
     ],
-    "youtube_intro": "https://youtube.com/watch?v=ai-course-intro",
+    "youtube_intro": "https://www.youtube.com/embed/z351xNQfcu0?si=fQNtursFvBcWpySw",
     "youtube_testimonials": "https://youtube.com/watch?v=student-testimonials"
   },
   "pricing": {
@@ -215,7 +215,7 @@
   },
   "whatsapp_community": {
     "name": "AI Masters Community",
-    "members_count": 5247,
+    "members_count": 247,
     "join_link": "https://chat.whatsapp.com/ai-masters-community",
     "features": [
       "Daily AI Tips & Updates",

@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to the admin/support team
     const adminEmailResponse = await resend.emails.send({
       from: "MasterAI Contact <onboarding@resend.dev>",
-      to: ["admin@masterai.com"], // Replace with actual admin email
+      to: ["pythonwithsr@gmail.com"], // Replace with actual admin email
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>

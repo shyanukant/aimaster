@@ -267,7 +267,7 @@ export default function CourseDetails() {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Link to="/">
+              <Link to="/checkout">
                 <Button 
                   size="lg" 
                   className="bg-white text-primary hover:bg-white/90 shadow-glow transition-all duration-300"

@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { Play, Code, Zap, Bot, Sparkles, Brain, Cpu, Network, LogOut, User } from "lucide-react";
+import { getCourse } from "@/lib/courseData";
+import CourseDetails from "@/pages/CourseDetails";
 export const HeroSection = () => {
   const {
     user,
@@ -12,6 +14,7 @@ export const HeroSection = () => {
     logout();
     navigate("/");
   };
+  const course = getCourse();
   return <section className="relative min-h-screen flex flex-col overflow-hidden bg-gradient-hero">
       {/* Navbar inside hero */}
       <div className="w-full flex justify-center pt-6 pb-4 px-4 relative z-20">
@@ -122,7 +125,7 @@ export const HeroSection = () => {
             <div className="relative max-w-4xl mx-auto mb-12 md:mb-16 px-4">
               <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-glow bg-gradient-to-br from-primary/30 to-accent/30 p-2 md:p-4 backdrop-blur-md border border-white/30">
                 <div className="relative aspect-video rounded-xl md:rounded-2xl overflow-hidden bg-black shadow-2xl">
-                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="AI Course Introduction" className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                  <iframe src={course.youtube_intro} title="AI Course Introduction" className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent pointer-events-none" />
                 </div>
               </div>

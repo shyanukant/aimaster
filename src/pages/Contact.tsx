@@ -47,7 +47,7 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
+      const { error } = await supabase.functions.invoke('dynamic-responder', {
         body: data
       });
 
@@ -113,7 +113,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Email</h3>
-                    <p className="text-white/80">support@masterai.com</p>
+                    <p className="text-white/80">pythonwithsr@gmail.com</p>
                   </div>
                 </div>
 

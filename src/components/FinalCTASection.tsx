@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Zap, TrendingUp, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const FinalCTASection = () => {
   return (
@@ -51,12 +52,14 @@ export const FinalCTASection = () => {
           
           {/* Main CTA */}
           <div className="mb-8">
+            <Link to="/signup/student">
             <Button 
               size="lg" 
               className="text-xl px-12 py-8 bg-white text-primary hover:bg-white/90 shadow-glow transition-all duration-300 hover:scale-105 font-bold"
             >
               Enroll Now & Start My AI Transformation
             </Button>
+            </Link>
           </div>
           
           {/* Trust Indicators */}

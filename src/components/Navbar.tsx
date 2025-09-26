@@ -52,7 +52,7 @@ export const Navbar = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm rounded-full"
+                    className="border-white/30 text-primary hover:text-white hover:bg-white/10 backdrop-blur-sm rounded-full"
                   >
                     Login
                   </Button>

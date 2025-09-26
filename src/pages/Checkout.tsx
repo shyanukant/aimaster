@@ -138,7 +138,8 @@ const Checkout = () => {
               <div className="text-center p-6 bg-muted/10 border-2 border-dashed border-border rounded-lg">
                 <div className="w-48 h-48 mx-auto bg-muted/30 rounded-lg flex items-center justify-center mb-4">
                   <div className="text-center">
-                    <QrCode className="w-24 h-24 text-muted-foreground mx-auto mb-2" />
+                    <img src="payment/payment_qr_code.png" alt="Payment QR Code" className="w-48 h-48 max-w-full max-h-full mx-auto mb-2" />
+
                     <p className="text-sm text-muted-foreground">Payment QR Code</p>
                   </div>
                 </div>
@@ -151,7 +152,7 @@ const Checkout = () => {
                 </div>
               </div>
 
-              {/* Transaction ID Form */}
+              Transaction ID Form
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                   <FormField

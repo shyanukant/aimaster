@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DollarSign, Users, TrendingUp, Share2 } from "lucide-react";
 import { getReferralProgram } from "@/lib/courseData";
+import { Link } from "react-router-dom";
 import robotLearning from "@/assets/doodles/robot-learning.png";
 
 export const ReferralSection = () => {
@@ -99,12 +100,14 @@ export const ReferralSection = () => {
               </div>
               
               <div className="text-center mt-8">
+                <Link to="/signup/student">
                 <Button 
                   size="lg" 
                   className="bg-success hover:bg-success/90 text-success-foreground px-8 py-4 text-lg shadow-lg hover:scale-105 transition-all duration-300"
                 >
                   Start Earning Today - Get Your Referral Link
                 </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>

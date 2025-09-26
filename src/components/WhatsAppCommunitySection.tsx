@@ -55,7 +55,8 @@ export const WhatsAppCommunitySection = () => {
                   <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
                     <div className="text-center p-3 md:p-4 bg-background rounded-lg border">
                       <Users className="w-6 md:w-8 h-6 md:h-8 text-success mx-auto mb-2" />
-                      <div className="text-xl md:text-2xl font-bold text-foreground">{Math.floor(community.members_count / 1000)}K+</div>
+                      {/* <div className="text-xl md:text-2xl font-bold text-foreground">{Math.floor(community.members_count / 1000)}K+</div> */}
+                      <div className="text-xl md:text-2xl font-bold text-foreground">200+</div>
                       <div className="text-xs md:text-sm text-muted-foreground">Active Members</div>
                     </div>
                     <div className="text-center p-3 md:p-4 bg-background rounded-lg border">
@@ -138,13 +139,13 @@ export const WhatsAppCommunitySection = () => {
               
               <div className="p-6 md:p-8 bg-gradient-to-r from-success/10 to-success/5 border-t border-success/20">
                 <div className="text-center">
-                  <Button 
+                  {/* <Button 
                     size="lg" 
                     className="bg-success hover:bg-success/90 text-success-foreground px-6 md:px-10 py-4 md:py-6 text-base md:text-lg shadow-lg hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                   >
                     <MessageCircle className="w-5 md:w-6 h-5 md:h-6 mr-2" />
                     Join WhatsApp Community - FREE
-                  </Button>
+                  </Button> */}
                   <p className="text-xs md:text-sm text-muted-foreground mt-4">
                     🔒 Private community • 📱 Mobile-first learning • 🤝 Peer support • 🎯 Expert guidance
                   </p>
