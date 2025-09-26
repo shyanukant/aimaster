@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react()],
-  base: '/aimaster/',
+  base: '/',
   resolve: {
     alias: {
       // Use import.meta.url to get the current file's URL and resolve the path
